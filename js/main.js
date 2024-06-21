@@ -106,7 +106,7 @@ const keyUpMapper = {
 
 document.addEventListener('keydown', (evento) => {
     evento.preventDefault();
-    console.log(evento.code, evento.key);
+    //console.log(evento.code, evento.key);
     keyDownMapper[evento.key] ? keyDownMapper[evento.key]() : keyDownMapper[evento.code]?.();
 });
 
